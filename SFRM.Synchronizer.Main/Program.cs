@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using SFRM.Synchronizer.Main.Fisiotes;
 using SFRM.Synchronizer.Main.Properties;
 
 namespace SFRM.Synchronizer.Main
@@ -18,7 +19,7 @@ namespace SFRM.Synchronizer.Main
             notifyIcon.Visible = true;
 
             Application.ApplicationExit += (sender, @event) => notifyIcon.Visible = false;
-            Application.Run(new SynchronizerApp());
+            Application.Run(new SynchronizerApp());            
         }
 
         private static ContextMenuStrip GetSincronizadorMenuStrip()
